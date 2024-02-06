@@ -1,0 +1,53 @@
+:root {
+  --main-color: #ffb43a;
+  --hover-color: hsl(37, 94%, 57%);
+  --body-color: #1e1e2a;
+  --container-color: #2d2e37;
+  --text-color: #fcfeff;
+}
+
+body {
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
+.modal-content, .container {
+  background-color: var(--container-color);
+  padding: 30px;
+  border-radius: 10px;
+  margin-top: 50px;
+}
+.container{
+  width: 50%;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+
+.btn-main {
+  background-color: var(--main-color);
+  border: none;
+}
+
+.btn-main:hover {
+  background-color: var(--hover-color);
+}
+.btn-container{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+
+}
+#eyeBtn{
+  background-color: #fcfeff;
+}
+.emailLoginError, .passwordLoginError, .passwordSignupError, .emailSignupError, .nameSignupError, .invalidLoginError
+{
+  color: #F65050;
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  .container{
+    width: 100%;
+  }
+}
